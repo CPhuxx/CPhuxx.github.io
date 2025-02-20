@@ -1,7 +1,9 @@
 export default function Home() {
     return (
         <>
-          <h1>Projects</h1>
+          <div>
+          <h1 className=" my-5 mx-5">Projects</h1>
+          </div>
         </>
     )
 }

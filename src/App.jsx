@@ -2,6 +2,7 @@ import "./App.css";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
+import Products from "./pages/Products"
 import { getConfigData } from "./data/configReader";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
@@ -19,6 +20,8 @@ function App() {
             <div className="flex flex-col">
 
               <SiteRoutes />
+              <Projects />
+              
               
               
 

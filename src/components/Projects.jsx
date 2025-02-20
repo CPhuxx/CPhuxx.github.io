@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { getConfigData } from "../data/configReader";
 import img from "../assets/img01.jpg";
-import profile from "../assets/IMG02.jpg";
+import profile from "../assets/profile.png";
 
 export default function Card() {
   const configData = getConfigData();
@@ -27,7 +27,7 @@ export default function Card() {
         <div className="flex flex-col bg-gray-100 rounded-lg px-5 py-5 ">
           <div className="flex items-center justify-between mb-5">
             <div className="font-medium text-lg flex items-center gap-x-2">
-              <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
+              <div className="w-1.5 h-1.5 bg-gray-400 rounded-full "></div>
               Projects
             </div>
             <button
