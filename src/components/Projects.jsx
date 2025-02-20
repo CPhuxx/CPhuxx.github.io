@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getConfigData } from "../data/configReader";
 import img from "../assets/img01.jpg";
+import profile from "../assets/IMG02.jpg";
 
 export default function Card() {
   const configData = getConfigData();
@@ -63,7 +64,7 @@ export default function Card() {
                   <div className="card-image w-16 h-16 rounded-full overflow-hidden">
                     <img
                       className="w-full h-full object-cover"
-                      src={img}
+                      src={profile}
                       alt=""
                     />
                   </div>
