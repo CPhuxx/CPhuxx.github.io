@@ -12,11 +12,15 @@ export default function Profile() {
 
   return (
     <>
-      <div className="flex items-center justify-between px-7 py-7 dark:bg-neutral-900">
-        <div className="font-medium text-lg flex items-center gap-x-3 dark:text-white">
+      
+      <section className="dark">
+      <div className="flex items-center justify-between px-7 py-7 dark:bg-neutral-900 ">
+      <div className="font-medium text-lg flex items-center gap-x-3 dark:text-white">
           <div className="w-1.5 h-1.5 bg-gray-400 rounded-full "></div>
           {configData.job}
         </div>
+      
+        
         <div className={workStatusTextClass}>
           <div className="text-sm font-medium flex items-center gap-x-1 ">
             <div className={workStatusClass}></div>
@@ -63,6 +67,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
