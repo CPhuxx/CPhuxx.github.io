@@ -12,21 +12,21 @@ export default function Profile() {
 
   return (
     <>
-      <div className="flex items-center justify-between px-7 py-7">
-        <div className="font-medium text-lg flex items-center gap-x-3">
-          <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
+      <div className="flex items-center justify-between px-7 py-7 dark:bg-neutral-900">
+        <div className="font-medium text-lg flex items-center gap-x-3 dark:text-white">
+          <div className="w-1.5 h-1.5 bg-gray-400 rounded-full "></div>
           {configData.job}
         </div>
         <div className={workStatusTextClass}>
-          <div className="text-sm font-medium flex items-center gap-x-1">
+          <div className="text-sm font-medium flex items-center gap-x-1 ">
             <div className={workStatusClass}></div>
             <span className="hidden md:block">{workStatusText}</span>
           </div>
         </div>
       </div>
-      <div className="px-7 py-7 flex flex-col flex-col-reverse md:flex md:flex-row md:items-center md:justify-between pt-3">
+      <div className="px-7 py-7 flex flex-col flex-col-reverse md:flex md:flex-row md:items-center md:justify-between pt-3 dark:bg-neutral-900">
         <div className="flex flex-col gap-y-2">
-          <p className="md:w-3/4 text-lg text-[#000] text-center md:text-justify font-normal tracking-tigh">
+          <p className="md:w-3/4 text-lg text-[#000] text-center md:text-justify font-normal tracking-tigh dark:text-white">
           <h1 className="text-4xl md:text-4xl mb-2 font-semibold text-center md:text-justify tracking-tighter">
             I'm {configData.name}
           </h1>

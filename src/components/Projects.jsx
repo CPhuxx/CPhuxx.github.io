@@ -23,16 +23,16 @@ export default function Card() {
 
   return (
     <>
-      <div className="px-2">
-        <div className="flex flex-col bg-gray-100 rounded-lg px-5 py-5 ">
+      <div className="px-2 dark:bg-neutral-900">
+        <div className="flex flex-col bg-gray-100 rounded-lg px-5 py-5 dark:bg-neutral-900 ">
           <div className="flex items-center justify-between mb-5">
-            <div className="font-medium text-lg flex items-center gap-x-2">
+            <div className="font-medium text-lg flex items-center gap-x-2 dark:text-white">
               <div className="w-1.5 h-1.5 bg-gray-400 rounded-full "></div>
               Projects
             </div>
             <button
               type="button"
-              className="gap-x-2 text-gray-900 bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+              className="gap-x-2 text-gray-900 bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center dark:bg-neutral-900 dark:text-white"
             >
               View All
               <svg
@@ -57,7 +57,7 @@ export default function Card() {
                 key={index}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="drop-shadow-md card bg-white rounded-lg px-5 py-3 gap-x-3 flex flex-col md:flex-none md:flex-row hover:-translate-y-1 hover:scale-100 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300"
+                className="drop-shadow-md card bg-white rounded-lg px-5 py-3 gap-x-3 flex flex-col md:flex-none md:flex-row hover:-translate-y-1 hover:scale-100 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300 dark:bg-neutral-900"
                 href=""
               >
                 <div className="rounded-full overflow-hidden flex items-center justify-center border border-gray-200 hidden md:block">
@@ -69,11 +69,11 @@ export default function Card() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center dark:text-white">
                   <h1 className="font-medium text-lg">
                     {project["project-name"]}
                   </h1>
-                  <p className="text-gray-500 text-md">
+                  <p className="text-gray-500 text-md dark:text-white">
                     {project["project-desc"]}
                   </p>
                 </div>

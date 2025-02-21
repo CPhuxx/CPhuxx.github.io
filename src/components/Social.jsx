@@ -6,10 +6,10 @@ export default function Social() {
 
   return (
     <>
-      <div className="px-2">
-        <div className="flex items-center justify-between px-7 py-7 bg-gray-100 rounded-lg">
-          <div className="font-medium text-lg flex items-center gap-x-2">
-            <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
+      <div className="px-2 dark:bg-neutral-900">
+        <div className="flex items-center justify-between px-7 py-7 bg-gray-100 rounded-lg dark:bg-neutral-900">
+          <div className="font-medium text-lg flex items-center gap-x-2 dark:text-white">
+            <div className="w-1.5 h-1.5 bg-gray-400 rounded-full "></div>
             Follow Me
           </div>
           <div className="flex gap-x-1">
